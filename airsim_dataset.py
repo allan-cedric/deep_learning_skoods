@@ -2,7 +2,7 @@ import airsim
 import os
 import csv
 
-# Class for Airsim Dataset
+### === Classe que gera um dataset em um ambiente AirSim. === ###
 class airsim_dataset:
 
     def __init__(self, path):
@@ -13,16 +13,17 @@ class airsim_dataset:
 
     def record(self, race, pid_car1, airsim_image_type):
 
-        # Tira um foto da câmera frontal do carro.
+        ### === Tira um foto da câmera frontal do carro. === ###
         image_response = race.client.simGetImage("0", airsim_image_type)
         self.images.append(image_response)
 
-        # Pega o ângulo de direção (steering angle) e o nome da imagem de um estado do carro.
+        ### === Pega o ângulo de direção (steering angle) e o nome da imagem de um estado do carro. === ###
         steering = f'{pid_car1.controls.steering:.6f}'
         img = 'img_' + str(self.it_imgs) + '.png'
         self.states.append([steering, img])
         self.it_imgs += 1
     
+    ### === Salva os dados e cria o dataset. === ###
     def saving(self):
         print("Saving the dataset... {}".format(self.path))
         os.mkdir(self.path + 'images/')

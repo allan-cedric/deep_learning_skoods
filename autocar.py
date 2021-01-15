@@ -7,7 +7,7 @@ import airsim
 import numpy as np
 import cv2
 
-# Classe para controlar o carro com a rede neural
+### === Classe para controlar o carro com a rede neural === ###
 class AutoCar:
     
     def __init__(self, client, model, name='AutoCar'):
