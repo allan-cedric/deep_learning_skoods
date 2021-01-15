@@ -8,6 +8,11 @@ Acesse o sistema da [Skoods](https://github.com/skoods-org/Welcome) para baixar 
 
 Além disso vale a pena dar uma conferida no projeto open source, [Microsoft AirSim](https://github.com/microsoft/AirSim).
 
+### Observações
+
+*   Esse README.md serve para dar uma visão macro sobre os arquivos deste projeto, detalhes adicionais estão comentados nos scripts presentes nesse repositório.
+*   É recomendado fortemente a consulta dos links acima para entender a estrutura da simulação.
+
 ### Dataset
 
 O formato padrão do *dataset* possui duas estruturas: um diretório com as imagens `(Ex.: images/)` e um arquivo de log com os *steering commands* do carro no formato *tsv - Tab Separated Values* `(Ex.: airsim_rec.txt)` .
@@ -19,6 +24,8 @@ O script `__main__.py` já possui integração da classe de `airsim_dataset.py` 
 ### Treinamento da rede neural
 
 `train_nvidia_model.py` : Script de treinamento de uma rede neural convolucional baseada no modelo proposto pela NVIDIA no paper [End to End Learning for Self-Driving Cars](https://arxiv.org/pdf/1604.07316.pdf).
+
+Esse script irá criar uma estrutura de diretórios com os melhores modelos neurais `(Ex.: nvidia_model/models/*.h5)`, sendo *.h5* a extensão padrão de um modelo neural.
 
 ### Teste da rede neural
 
