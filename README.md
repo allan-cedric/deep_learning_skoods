@@ -29,7 +29,7 @@ Esse script irá criar uma estrutura de diretórios com os melhores modelos neur
 
 ### Teste da rede neural
 
-`test_nvidia_model.py` : Script de teste da rede neural convolucional em um ambiente de simulação AirSim. Serve principalmente para debugar a rede neural.
+`test_nvidia_model.py` : Script de teste da rede neural convolucional em um ambiente de simulação integrado com o Microsoft AirSim. Serve principalmente para debugar a rede neural.
 
 ### Rodar a simulação
 
