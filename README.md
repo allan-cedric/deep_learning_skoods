@@ -35,6 +35,6 @@ Esse script irá criar uma estrutura de diretórios com os melhores modelos neur
 
 `test_nvidia_model.py` : Script de teste da rede neural convolucional em um ambiente de simulação integrado com o Microsoft AirSim. Serve principalmente para debugar a rede neural.
 
-### Rodar a simulação com sistema da Skoods
+### Rodar a simulação com o sistema da Skoods
 
 `__main__.py` : Script principal para rodar o carro autônomo tanto com o controle PID simples fornecido pela própria Skoods, quanto com a rede neural convolucional. **Lembre-se de sempre rodar o ambiente da simulação antes de rodar esse script**.
