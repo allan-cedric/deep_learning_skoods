@@ -13,9 +13,9 @@ Além disso vale a pena dar uma conferida no projeto open source, [Microsoft Air
 *   Esse README.md serve para dar uma visão macro sobre os arquivos deste projeto, detalhes adicionais estão comentados nos scripts presentes nesse repositório.
 *   É recomendado fortemente a consulta dos links acima para entender a estrutura da simulação.
 
-*   O sistema aplicado aqui foi desenvolvido e testado no sistema operacional *Windows 10 64-bits*.
-*   *Instale em um ambiente Anaconda exatamente o arquivo de pacotes e dependências: package-list.txt*, utilize o comando `conda create -n <myenv> --file package-list.txt` para criar um novo ambiente com todos esses pacotes. Tudo que precisa para rodar esse projeto está no arquivo `package-list.txt`.
-*   *Ative o ambiente com o comando* `conda activate <myenv>`.
+*   O sistema aplicado aqui foi desenvolvido e testado no sistema operacional **Windows 10 64-bits**.
+*   **Instale em um ambiente Anaconda exatamente o arquivo de pacotes e dependências: package-list.txt**, utilize o comando `conda create -n <myenv> --file package-list.txt` para criar um novo ambiente com todos esses pacotes. Tudo que precisa para rodar esse projeto está no arquivo `package-list.txt`.
+*   **Ative o ambiente com o comando** `conda activate <myenv>`.
 
 ### Dataset
 
