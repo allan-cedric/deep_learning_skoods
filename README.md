@@ -4,9 +4,9 @@
 
 ### Ambiente da simulação
 
-Acesse o sistema da [Skoods](https://github.com/skoods-org/Welcome){target="_blank"} para baixar o ambiente da simulação.
+Acesse o sistema da <a href="https://github.com/skoods-org/Welcome" target="_blank">Skoods</a> para baixar o ambiente da simulação.
 
-Além disso vale a pena dar uma conferida no projeto open source, [Microsoft AirSim](https://github.com/microsoft/AirSim){target="_blank"}.
+Além disso vale a pena dar uma conferida no projeto open source, <a href="https://github.com/microsoft/AirSim" target="_blank">Microsoft AirSim</a>.
 
 ### Observações
 
