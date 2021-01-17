@@ -4,18 +4,18 @@
 
 ### Ambiente da simulação
 
-Acesse o sistema da [Skoods](https://github.com/skoods-org/Welcome) para baixar o ambiente da simulação.
+Acesse o sistema da <a href="https://github.com/skoods-org/Welcome" target="_blank">Skoods</a> para baixar o ambiente da simulação.
 
-Além disso vale a pena dar uma conferida no projeto open source, [Microsoft AirSim](https://github.com/microsoft/AirSim).
+Além disso vale a pena dar uma conferida no projeto open source, <a href="https://github.com/microsoft/AirSim" target="_blank">Microsoft AirSim</a>.
 
 ### Observações
 
 *   Esse README.md serve para dar uma visão macro sobre os arquivos deste projeto, detalhes adicionais estão comentados nos scripts presentes nesse repositório.
 *   É recomendado fortemente a consulta dos links acima para entender a estrutura da simulação.
 
-*   O sistema aplicado aqui foi desenvolvido e testado no sistema operacional *Windows 10 64-bits*.
-*   *Instale em um ambiente Anaconda exatamente o arquivo de pacotes e dependências: package-list.txt*, utilize o comando `conda create -n <myenv> --file package-list.txt` para criar um novo ambiente com todos esses pacotes. Tudo que precisa para rodar esse projeto está no arquivo `package-list.txt`.
-*   *Ative o ambiente com o comando* `conda activate <myenv>`.
+*   O sistema aplicado aqui foi desenvolvido e testado no sistema operacional **Windows 10 64-bits**.
+*   **Instale em um ambiente Anaconda exatamente o arquivo de pacotes e dependências: package-list.txt**, utilize o comando `conda create -n <myenv> --file package-list.txt` para criar um novo ambiente com todos esses pacotes. Tudo que precisa para rodar esse projeto está no arquivo `package-list.txt`.
+*   **Ative o ambiente com o comando** `conda activate <myenv>`.
 
 ### Dataset
 
@@ -35,6 +35,6 @@ Esse script irá criar uma estrutura de diretórios com os melhores modelos neur
 
 `test_nvidia_model.py` : Script de teste da rede neural convolucional em um ambiente de simulação integrado com o Microsoft AirSim. Serve principalmente para debugar a rede neural.
 
-### Rodar a simulação
+### Rodar a simulação com o sistema da Skoods
 
 `__main__.py` : Script principal para rodar o carro autônomo tanto com o controle PID simples fornecido pela própria Skoods, quanto com a rede neural convolucional. **Lembre-se de sempre rodar o ambiente da simulação antes de rodar esse script**.
