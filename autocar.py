@@ -39,11 +39,15 @@ class AutoCar:
         return np.array([transition_image])
 
     def race(self):
+        ### === Atualização sobre a pose do carro (race.py) === ###
+        self.updateState()
         ### === Predição === ###
         img = self.get_image(airsim.ImageType.Segmentation)
         model_output = self.model.predict(img)
         self.controls.steering = float(model_output[0][0])*2
-        self.controls.throttle = 0.7 - (0.5*abs(self.controls.steering))
+        if (self.state.speed <= 15):
+            self.controls.throttle = 0.8 - (0.5*abs(self.controls.steering))
+        else:
+            self.controls.throttle = 0.6
         self.client.setCarControls(self.controls, self.name)
-        ### === Atualização sobre a pose do carro (race.py) === ###
-        self.updateState()
+        return True

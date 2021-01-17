@@ -20,26 +20,20 @@ class Race:
         self.mode_input = input("Type **1** to drive the car by your own and RECORD data (will load the first car), "+ \
                                      "**2** to QUALIFY (will load the first car), "+ \
                                      "**3** to RACE (accepts multiple cars), "+ \
-                                     "**4** to DATASET RECORDING (will load the first car), "+ \
-                                     "**5** to QUALIFY (Neural Net - will load the first car), " + \
-                                     "**6** to QUALIFY (Neural Net - accepts multiple cars) ")
+                                     "**4** to DATASET RECORDING (will load the first car) ")
         if self.mode_input == '1':
             print("Race || MODE: WAYPONTS RECORDING")
         elif self.mode_input == '2':
             print("Race || MODE: QUALIFY")
         elif self.mode_input == '3':
             print("Race || MODE: RACE")
-        # New modes
+        # New mode
         elif self.mode_input == '4':
             print("Race || MODE: DATASET RECORDING")
-        elif self.mode_input == '5':
-            print("Race || MODE: QUALIFY (Neural Net)")
-        elif self.mode_input == '6':
-            print("Race || MODE: RACE (Neural Net)")
         else:
             print("Race || Warning - MODE: Not defined")
 
-        if self.mode_input in ['2','3','4','5','6']:
+        if self.mode_input in ['2','3','4']:
             pause_simulation_input = input("Type **1** to PAUSE SIMULATION to process data during racing (better performance but takes longer) or "+ \
                                                 "**2** to run the racing in REAL-TIME (worse performance but faster): ")
             if  pause_simulation_input == '1': # Pause

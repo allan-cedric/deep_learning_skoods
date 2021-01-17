@@ -16,7 +16,7 @@ class Car:
         self.waypoints = planning.Waypoints(self.name) # Initialize waypoints object
         self.filename = filename
 
-        if self.mode_input in ['2','3','4','5','6']: # If Qualify or Race
+        if self.mode_input in ['2','3','4']: # If Qualify or Race
             self.client.enableApiControl(True, self.name)
             self.keep_racing = True
             self.loadWaypointsFromFile() # load waypoints previously recorded
