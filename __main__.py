@@ -43,7 +43,7 @@ cars = [pid_car1, pid_car2, pid_car3]
 
 # OPTION C: Neural Network
 ### === Load the best neural model === ### (Take some time to find)
-models = glob.glob('./nvidia_model-run-center-surf/models/*.h5')
+models = glob.glob('./nvidia_model-run-center-seg/models/*.h5')
 best_model = max(models, key=os.path.getctime)
 MODEL_PATH = best_model
 auto_car1 = AutoCar(client=race.client, model=MODEL_PATH, name='AutoCar')
@@ -57,7 +57,7 @@ if race.mode_input == '1':  # Record Waypoints
 elif race.mode_input in ['2', '3', '4']:
     # Will run only the first car to Qualify. Change settings.json file to only one car.
     if race.mode_input == '2':
-        race.setNumberOfLaps(5)
+        race.setNumberOfLaps(3)
         cars = [cars[0]]
     elif race.mode_input == '3':
         race.setNumberOfLaps(3)

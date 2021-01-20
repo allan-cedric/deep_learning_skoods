@@ -24,7 +24,7 @@ from tensorflow.keras.optimizers import Adam
 
 ### === Construção do Dataset === ###
 # << Diretório do dataset padrão >>
-MAIN_DATA_DIR = "./raw_data/run-center-surf/"
+MAIN_DATA_DIR = "./raw_data/run-center-seg/"
 
 # << Leitura do arquivo log dos estados do carro >> (O formato padrão do arquivo é '.tsv' - tab separated values).
 LOG_FILENAME = MAIN_DATA_DIR + "airsim_rec.txt"
@@ -68,7 +68,7 @@ validation_split = 0.2
 batch_size = 64
 
 # << Diretório onde vai ser salvo os modelos neurais. >>
-MODEL_OUTPUT_DIR = "./nvidia_model/"
+MODEL_OUTPUT_DIR = "./nvidia_model-run-center-seg/"
 os.mkdir(MODEL_OUTPUT_DIR)
 
 ### === Rede neural convolucional === ###

@@ -42,7 +42,7 @@ class AutoCar:
         ### === Atualização sobre a pose do carro (race.py) === ###
         self.updateState()
         ### === Predição === ###
-        img = self.get_image(airsim.ImageType.SurfaceNormals)
+        img = self.get_image(airsim.ImageType.Segmentation)
         model_output = self.model.predict(img)
         self.controls.steering = float(model_output[0][0])*2
         if (self.state.speed <= 20):

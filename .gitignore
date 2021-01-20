@@ -5,7 +5,6 @@ garage/pid_car/__pycache__
 garage/pid_car/control/__pycache__
 skoods/__pycache__
 nvidia_model-run-center-scene/
-nvidia_model-run-center-seg/
 nvidia_model-run-center-surf/
 nvidia_model-run-fast4-surf/
 img_nvidia_model_AutoCar.png
