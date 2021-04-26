@@ -28,7 +28,7 @@ def get_image(airsim_image_type):
     return np.array([transition_image])
 
 ### === Carrega o modelo de menor custo === ###
-models = glob.glob('./nvidia_model-run-center-surf/models/*.h5')
+models = glob.glob('./nvidia_model-run-center-seg/models/*.h5')
 best_model = max(models, key=os.path.getctime)
 MODEL_PATH = best_model
 print('Using model {0} for testing.'.format(MODEL_PATH))
@@ -51,10 +51,10 @@ client.setCarControls(car_controls)
 while True:
 
     ### === Predição do modelo neural === ###
-    img = get_image(airsim.ImageType.SurfaceNormals)
+    img = get_image(airsim.ImageType.Segmentation)
     model_output = model.predict(img)
     
-    ### === Controle do carro (nvidia_mode-run-center-surf1) === ###
+    ### === Controle do carro (nvidia_mode-run-center-seg) === ###
     '''
     car_controls.steering = float(model_output[0][0])*2
     car_controls.throttle = 0.7 - (0.4*abs(car_controls.steering))'''

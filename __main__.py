@@ -90,7 +90,7 @@ elif race.mode_input in ['2', '3', '4']:
                 # RUN YOUR CODE HERE
                 # keep_racing_from_car not being used, but I will leave here just in case
                 keep_racing_from_car = each_car.race()
-                dataset.record(race, pid_car1, airsim.ImageType.SurfaceNormals)
+                dataset.record(race, pid_car1, airsim.ImageType.Segmentation)
                 # END HERE3
             race.playSimulation()  # Will check for mode
             keep_racing_from_race = race.updateRaceParameters()
